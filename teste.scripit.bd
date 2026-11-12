@@ -1,0 +1,12 @@
+SELECT 
+       d.nome,
+       d.codigo,
+       p.nome,
+       p.email
+
+FROM
+      disciplina d 
+
+INNER join
+       professor p
+ON p.id_professor = d.fk_professor;
